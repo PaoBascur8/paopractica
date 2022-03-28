@@ -166,7 +166,4 @@ li:hover{
 .festejosXXXMasivos{
     grid-area: festejos_area;
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    color: darkolivegreen;
 }
