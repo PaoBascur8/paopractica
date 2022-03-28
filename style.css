@@ -152,3 +152,12 @@ li:hover{
     align-items: center;
     color: darkolivegreen;
 }
+
+
+.festejosXXX{
+    grid-area: festejos_area;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: darkolivegreen;
+}
