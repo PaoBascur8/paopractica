@@ -76,6 +76,11 @@ li:hover{
     width: 500px;
     height: 320px;
 }
+.imagenes_galeria:hover{
+    width: 600px;
+    height: 384px;
+    transition: 500ms;
+}
 .container_galeria_grid{
     display: grid;
     grid-template-columns: 1fr;
