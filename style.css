@@ -167,6 +167,21 @@ li:hover{
     grid-gap: 10px;
 }
 
+/*---------------------------- carrusel--------------------------------------------------------------*/
+.imagenes_carrusel{
+    width: 400px;
+    height:345px;
+    padding: 10px;
+}
 
-
-
+.carrusel_position{
+    display:flex;
+    justify-content:space-around;
+    align-content: center;
+}
+/*----------------------------contacto--------------------------------------------------------------*/
+.formulario_nombre{
+    display: flex;
+    justify-content:center;
+    flex-direction: column;
+}
