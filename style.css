@@ -74,11 +74,12 @@ li:hover{
 
 .imagenes_galeria{
     width: 500px;
-    height: 320px;
+    height: 335px;
 }
+
 .imagenes_galeria:hover{
     width: 600px;
-    height: 384px;
+    height: 394px;
     transition: 500ms;
 }
 .container_galeria_grid{
@@ -135,12 +136,9 @@ li:hover{
 .img_Ecomunes{
     display: grid;
     grid-template-columns: 1fr 1fr;
+    grid-gap: 10px;
 }
 
-
-.img_Ecomunes_1{
-    margin: 1em;
-}
 
 .pacientes{
     grid-area: abuelos_area;
@@ -150,6 +148,12 @@ li:hover{
     color: darkolivegreen;
 }
 
+.img_Pacientes{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 10px;
+}
+
 .festejos{
     grid-area: festejos_area;
     display: flex;
@@ -157,5 +161,27 @@ li:hover{
     align-items: center;
     color: darkolivegreen;
 }
+.img_festejos{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 10px;
+}
 
+/*---------------------------- carrusel--------------------------------------------------------------*/
+.imagenes_carrusel{
+    width: 400px;
+    height:345px;
+    padding: 10px;
+}
 
+.carrusel_position{
+    display:flex;
+    justify-content:space-around;
+    align-content: center;
+}
+/*----------------------------contacto--------------------------------------------------------------*/
+.formulario_nombre{
+    display: flex;
+    justify-content:center;
+    flex-direction: column;
+}
