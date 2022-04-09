@@ -1,43 +1,5 @@
-*{margin: 0%;
- padding: 0%;
- box-sizing: border-box;
-}
-.container_pincipal_index{
-    display: grid;
-    grid-template-columns: 2fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
-    grid-template-areas: 
-    "header" "header"
-    "main" "main"
-    "footer""footer";
-}
 
-header{
-     grid-area :header;
-     display: flex;
-     list-style: none;
-}
-.nav_lista{
-     align-items: center; 
-     justify-content: space-between;
-     padding: 1px;
-     margin: 10px;
-     gap: 2rem;
-}
-main{
-    grid-area: main;
-display: flex;
-}
-footer{
-    grid-area: footer;
-    display: flex;
-    list-style: none;
-    text-align: center;
-}
-
-
-/*-----back up ---------*/
-
+/*-------------------------back up-----------------------------------------------------------------------*/
 *{
     margin: 0%;
     padding: 0%;
@@ -52,7 +14,6 @@ body{
 a{ 
     font-weight: bold;
     text-decoration: none;
-
 }
 
 
@@ -62,7 +23,7 @@ a{
     align-items: center; 
     justify-content: space-between;
     padding: 1px;
-    margin: 10px; ;
+    margin: 10px;
 }
 
 .nav_lista {
@@ -77,7 +38,6 @@ li{
     border-radius: 11pc;
     border:solid 1px; 
     padding: 10px;
- 
 }
 
 li:hover{
@@ -96,6 +56,7 @@ li:hover{
     justify-content: center;
     padding: 10px;
 }
+
 .h1_main{
     display: flex;
     font-family: Arial, Helvetica, sans-serif;
@@ -114,11 +75,12 @@ li:hover{
 
 .imagenes_galeria{
     width: 500px;
-    height: 320px;
+    height: 335px;
 }
+
 .imagenes_galeria:hover{
     width: 600px;
-    height: 384px;
+    height: 394px;
     transition: 500ms;
 }
 .container_galeria_grid{
@@ -175,12 +137,9 @@ li:hover{
 .img_Ecomunes{
     display: grid;
     grid-template-columns: 1fr 1fr;
+    grid-gap: 10px;
 }
 
-
-.img_Ecomunes_1{
-    margin: 1em;
-}
 
 .pacientes{
     grid-area: abuelos_area;
@@ -190,6 +149,12 @@ li:hover{
     color: darkolivegreen;
 }
 
+.img_Pacientes{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 10px;
+}
+
 .festejos{
     grid-area: festejos_area;
     display: flex;
@@ -197,5 +162,27 @@ li:hover{
     align-items: center;
     color: darkolivegreen;
 }
+.img_festejos{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 10px;
+}
 
+/*---------------------------- carrusel--------------------------------------------------------------*/
+.imagenes_carrusel{
+    width: 400px;
+    height:345px;
+    padding: 10px;
+}
 
+.carrusel_position{
+    display:flex;
+    justify-content:space-around;
+    align-content: center;
+}
+/*----------------------------contacto--------------------------------------------------------------*/
+.formulario_nombre{
+    display: flex;
+    justify-content:center;
+    flex-direction: column;
+}
