@@ -174,11 +174,6 @@ li:hover{
     padding: 10px;
 }
 
-.carrusel_position{
-    display:flex;
-    justify-content:space-around;
-    align-content: center;
-}
 /*----------------------------contacto--------------------------------------------------------------*/
 .formulario_nombre{
     display: flex;
