@@ -1,12 +1,1 @@
-$color-primary:hsl(120, 80%, 86%);
-
-.nav{
-    background-color: $color-primary;
-    ul li{
-        list-style: none;  
-    
-     a{
-         text-decoration: none;
-     }
-    }
-}
+@import "./componentes/header"
