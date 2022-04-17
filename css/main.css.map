@@ -2,7 +2,7 @@
     "version": 3,
     "mappings": "AAEA,AAAA,IAAI,CAAA;EACA,gBAAgB,EAHL,OAAkB;CAWhC;;AATD,AAEI,IAFA,CAEA,EAAE,CAAC,EAAE,CAAA;EACD,UAAU,EAAE,IAAI;CAKnB;;AARL,AAKK,IALD,CAEA,EAAE,CAAC,EAAE,CAGJ,CAAC,CAAA;EACG,eAAe,EAAE,IAAI;CACxB",
     "sources": [
-        "style.scss"
+        "main.scss"
     ],
     "names": [],
     "file": "style.css"
