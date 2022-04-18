@@ -29,14 +29,14 @@ main {
 
         .habitaciones{
             grid-area: habitaciones_area;
-            display: flex;
-            flex-direction: column;
+            flex-direction: map-get($map:$variables-lista , $key:f-direction );
             align-items: center;
             color: darkolivegreen;
 
             .img_habitaciones{  
                 display: flex;
                 justify-content: space-between;
+                flex-direction: map-get($map:$variables-lista , $key:f-direction )
             }
         }
     
