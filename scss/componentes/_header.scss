@@ -1,9 +1,6 @@
 header {
     .header_nav{
-    
-        display:flex;
-        align-items: center; 
-        justify-content: space-between;
+        @include flex(flex,center,space-between);
         padding: 1px;
         margin: 10px; 
 
