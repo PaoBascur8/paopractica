@@ -46,6 +46,157 @@ header .header_nav .nav_lista a {
   text-decoration: none;
 }
 
+main .container_galeria_grid {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+  -ms-grid-rows: 15vh 1fr 1fr 1fr 1fr;
+      grid-template-rows: 15vh 1fr 1fr 1fr 1fr;
+      grid-template-areas: "titulo_area" "habitaciones_area" "espaciosComunes_area" "abuelos_area" "festejos_area";
+}
+
+main .container_galeria_grid .titulo_galeria {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: titulo_area;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: darkolivegreen;
+}
+
+main .container_galeria_grid .imagenes_galeria {
+  width: 500px;
+  height: 335px;
+}
+
+main .container_galeria_grid .imagenes_galeria :hover {
+  width: 600px;
+  height: 394px;
+  -webkit-transition: 500ms;
+  transition: 500ms;
+}
+
+main .container_galeria_grid .habitaciones {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: habitaciones_area;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: darkolivegreen;
+}
+
+main .container_galeria_grid .habitaciones .img_habitaciones {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+main .container_galeria_grid .espacios_comunes {
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  grid-area: espaciosComunes_area;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: darkolivegreen;
+}
+
+main .container_galeria_grid .espacios_comunes .img_Ecomunes1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 1000px;
+}
+
+main .container_galeria_grid .espacios_comunes .img_Ecomunes {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  grid-gap: 10px;
+}
+
+main .container_galeria_grid .pacientes {
+  -ms-grid-row: 4;
+  -ms-grid-column: 1;
+  grid-area: abuelos_area;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: darkolivegreen;
+}
+
+main .container_galeria_grid .pacientes .img_Pacientes {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  grid-gap: 10px;
+}
+
+main .container_galeria_grid .festejos {
+  -ms-grid-row: 5;
+  -ms-grid-column: 1;
+  grid-area: festejos_area;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: darkolivegreen;
+}
+
+main .container_galeria_grid .festejos .img_festejos {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  grid-gap: 10px;
+}
+
 * {
   margin: 0%;
   padding: 0%;

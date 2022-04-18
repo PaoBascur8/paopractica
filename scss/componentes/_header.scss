@@ -1,6 +1,5 @@
 header {
-    .header_nav{
-        @include flex(flex,center,space-between);
+    .header_nav{ @include flex(flex,center,space-between);
         padding: 1px;
         margin: 10px; 
 
@@ -10,9 +9,7 @@ header {
     }   
 
      
-        .nav_lista {  @include flex(flex,center,space-between);
-        
-            
+        .nav_lista { @include flex(flex,center,space-between);
             list-style: none;  
             
             

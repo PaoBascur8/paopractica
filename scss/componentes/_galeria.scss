@@ -1,0 +1,121 @@
+main {
+
+    .container_galeria_grid{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 15vh 1fr 1fr 1fr 1fr;
+        grid-template-areas:
+        "titulo_area"
+        "habitaciones_area"
+        "espaciosComunes_area"
+        "abuelos_area"
+        "festejos_area";
+
+        .titulo_galeria{
+            grid-area: titulo_area;
+            display: flex;
+            align-items:center;
+            justify-content: center;
+            color: darkolivegreen;
+        }
+     
+        .imagenes_galeria{
+            width: 500px;
+            height: 335px;
+            :hover{
+                width: 600px;
+                height: 394px;
+                transition: 500ms;
+            }
+        }
+            
+        .habitaciones{
+            grid-area: habitaciones_area;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            color: darkolivegreen;
+
+            .img_habitaciones{  
+                display: flex;
+                justify-content: space-between;
+            }
+        }
+    
+
+        .espacios_comunes{
+            grid-area: espaciosComunes_area;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            color: darkolivegreen;
+
+        
+            .img_Ecomunes1{
+                display: flex;
+                 flex-wrap: wrap;
+                 justify-content: space-between;
+                 width: 1000px;
+            }
+
+            .img_Ecomunes{
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                grid-gap: 10px;
+            }
+        }
+
+        .pacientes{
+            grid-area: abuelos_area;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            color: darkolivegreen;
+            .img_Pacientes{
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                grid-gap: 10px;
+            }
+        }   
+
+        
+        .festejos{
+            grid-area: festejos_area;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            color: darkolivegreen;
+
+            .img_festejos{
+              display: grid;
+             grid-template-columns: 1fr 1fr;
+             grid-gap: 10px;
+            }
+
+        
+        }
+   
+
+
+
+
+
+
+
+
+
+    }
+    
+
+
+
+
+
+
+    
+
+
+
+
+}
+   
