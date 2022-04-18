@@ -1,7 +1,7 @@
 main {
 
     .container_galeria_grid{
-        display: grid;
+        display:map-get($map:$variables-lista , $key:d-grid );
         grid-template-columns: 1fr;
         grid-template-rows: 15vh 1fr 1fr 1fr 1fr;
         grid-template-areas:
@@ -13,9 +13,7 @@ main {
 
         .titulo_galeria{
             grid-area: titulo_area;
-            display: flex;
-            align-items:center;
-            justify-content: center;
+            @include flex (flex,center,center);
             color: darkolivegreen;
         }
      
@@ -28,7 +26,7 @@ main {
                 transition: 500ms;
             }
         }
-            
+
         .habitaciones{
             grid-area: habitaciones_area;
             display: flex;
@@ -46,35 +44,32 @@ main {
         .espacios_comunes{
             grid-area: espaciosComunes_area;
             display: flex;
-            flex-direction: column;
-            align-items: center;
+            flex-direction: map-get($map:$variables-lista , $key:f-direction );
             color: darkolivegreen;
 
         
-            .img_Ecomunes1{
-                display: flex;
+            .img_Ecomunes1{ @include flex (flex,space-between);
                  flex-wrap: wrap;
-                 justify-content: space-between;
                  width: 1000px;
             }
 
             .img_Ecomunes{
-                display: grid;
+                display:map-get($map:$variables-lista , $key:d-grid );
                 grid-template-columns: 1fr 1fr;
-                grid-gap: 10px;
+                grid-gap: map-get($map:$variables-lista, $key:g-gap )
             }
         }
 
         .pacientes{
             grid-area: abuelos_area;
             display: flex;
-            flex-direction: column;
+            flex-direction: map-get($map:$variables-lista , $key:f-direction );
             align-items: center;
             color: darkolivegreen;
             .img_Pacientes{
-                display: grid;
+                display: map-get($map:$variables-lista , $key:d-grid );
                 grid-template-columns: 1fr 1fr;
-                grid-gap: 10px;
+                grid-gap: map-get($map:$variables-lista, $key:g-gap )
             }
         }   
 
@@ -82,14 +77,14 @@ main {
         .festejos{
             grid-area: festejos_area;
             display: flex;
-            flex-direction: column;
+            flex-direction: map-get($map:$variables-lista , $key:f-direction );
             align-items: center;
             color: darkolivegreen;
 
             .img_festejos{
-              display: grid;
+              display: map-get($map:$variables-lista , $key:d-grid );
              grid-template-columns: 1fr 1fr;
-             grid-gap: 10px;
+             grid-gap: map-get($map:$variables-lista, $key:g-gap )
             }
 
         
