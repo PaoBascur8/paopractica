@@ -3,35 +3,30 @@ header {
         padding: 1px;
         margin: 10px; 
 
-    .img_header_tamanio {
-        width: 250px;
-        height:auto;
-    }   
+        .img_header_tamanio {
+            width: 250px;
+            height:auto;
+        }   
 
-     
-        .nav_lista { @include flex(flex,center,space-between);
+        .nav_lista { @include flex(flex,space-between,center);
             list-style: none;  
             
-            ul{
-                li{
-                    margin: 19px;
-                    border-radius: 11pc;
-                    border:solid 1px; 
-                    padding: 10px;
-                    &:hover{
-                        background-color: rgba(148, 233, 148, 0.986);  
-                 
-                    }
+            li{
+                margin: 19px;
+                border-radius: 11pc;
+                border:solid 1px; 
+                padding: 10px;
 
-                    a{ 
-                        font-weight: bold;
-                        text-decoration: none;
-                    }  
-                }                 
-            }
-        
-            
+                &:hover{
+                    background-color: rgba(148, 233, 148, 0.986);  
+             
+                }
+
+                a{ 
+                    font-weight: bold;
+                    text-decoration: none;
+                }  
+            } 
         }
     }
-
 }

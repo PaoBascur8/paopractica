@@ -29,27 +29,27 @@ header .header_nav .nav_lista {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: space-between;
-      -ms-flex-align: space-between;
-          align-items: space-between;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   list-style: none;
 }
 
-header .header_nav .nav_lista ul li {
+header .header_nav .nav_lista li {
   margin: 19px;
   border-radius: 11pc;
   border: solid 1px;
   padding: 10px;
 }
 
-header .header_nav .nav_lista ul li:hover {
+header .header_nav .nav_lista li:hover {
   background-color: rgba(148, 233, 148, 0.986);
 }
 
-header .header_nav .nav_lista ul li a {
+header .header_nav .nav_lista li a {
   font-weight: bold;
   text-decoration: none;
 }
