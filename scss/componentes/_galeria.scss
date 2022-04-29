@@ -1,9 +1,7 @@
-main {
-
-    .container_galeria_grid{
-        display:map-get($map:$variables-lista , $key:d-grid );
+.container_galeria_grid {
+        display: map-get($map:$variables-lista , $key:d-grid );
         grid-template-columns: 1fr;
-        grid-template-rows: 15vh 1fr 1fr 1fr 1fr;
+        grid-template-rows: 15vh;
         grid-template-areas:
         "titulo_area"
         "habitaciones_area"
@@ -16,19 +14,10 @@ main {
             @include flex (flex,center,center);
             color: darkolivegreen;
         }
-     
-        .imagenes_galeria{
-            width: 500px;
-            height: 335px;
-            :hover{
-                width: 600px;
-                height: 394px;
-                transition: 500ms;
-            }
-        }
 
         .habitaciones{
             grid-area: habitaciones_area;
+            display: flex;
             flex-direction: map-get($map:$variables-lista , $key:f-direction );
             align-items: center;
             color: darkolivegreen;
@@ -36,27 +25,34 @@ main {
             .img_habitaciones{  
                 display: flex;
                 justify-content: space-between;
-                flex-direction: map-get($map:$variables-lista , $key:f-direction )
+
+                .img_habitaciones1{
+                    margin: 1em;
+                }
             }
         }
     
 
         .espacios_comunes{
             grid-area: espaciosComunes_area;
-            display: flex;
+            @include flex (flex,space-between,center);
             flex-direction: map-get($map:$variables-lista , $key:f-direction );
             color: darkolivegreen;
 
         
-            .img_Ecomunes1{ @include flex (flex,center,space-between);
-                 flex-wrap: wrap;
-                 width: 1000px;
-            }
 
             .img_Ecomunes{
                 display:map-get($map:$variables-lista , $key:d-grid );
                 grid-template-columns: 1fr 1fr;
-                grid-gap: map-get($map:$variables-lista, $key:g-gap )
+                grid-gap: map-get($map:$variables-lista, $key:g-gap );
+
+
+                .img_Ecomunes_1{ 
+                    @include flex (flex,center,space-between);
+                    flex-wrap: wrap;
+                    margin: 1em;
+               }
+
             }
         }
 
@@ -90,27 +86,24 @@ main {
         
         }
    
+    
+    
+}
+    
+    
+.imagenes_galeria{
+    width: 500px;
+    height: 335px;
 
-
-
-
-
-
-
-
-
+    &:hover{
+        width: 600px;
+        height: 394px;
+        transition: 500ms;
     }
-    
+}
 
 
-
-
-
-
-    
-
-
-
-
+h3{
+    margin: 50px 10px 10px;
 }
    
