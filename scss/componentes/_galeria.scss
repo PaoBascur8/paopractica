@@ -48,7 +48,7 @@ main {
             color: darkolivegreen;
 
         
-            .img_Ecomunes1{ @include flex (flex,space-between);
+            .img_Ecomunes1{ @include flex (flex,center,space-between);
                  flex-wrap: wrap;
                  width: 1000px;
             }
