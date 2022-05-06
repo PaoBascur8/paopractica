@@ -286,6 +286,9 @@ main .imagen_glorieta {
       -ms-flex-pack: center;
           justify-content: center;
   padding: 3rem;
-  border-radius: 4rem;
+}
+
+main .imagen_glorieta img {
+  border-radius: 60px;
 }
 /*# sourceMappingURL=main.css.map */
