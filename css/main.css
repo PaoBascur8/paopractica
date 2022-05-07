@@ -300,21 +300,45 @@ main .mapa_ubicacion {
   padding: 3rem;
 }
 
-main .imagen_glorieta {
+.container_informacion {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.container_informacion .imagen_glorieta {
   padding: 3rem;
 }
 
-main .imagen_glorieta img {
+.container_informacion .imagen_glorieta img {
   border-radius: 60px;
 }
 
-main .formulario_contacto {
+.container_formulario {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.container_formulario p {
+  font: size 150px;
+  font-weight: bold;
+  color: olivedrab;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+.container_formulario .formulario_contacto {
   background-color: aliceblue;
   width: 400px;
   -webkit-box-shadow: 7px 13px 37px gray;
@@ -323,9 +347,9 @@ main .formulario_contacto {
   padding: 10px;
 }
 
-main .formulario_contacto .contacto label, main .formulario_contacto input, main .formulario_contacto textarea {
-  display: block;
+.container_formulario .formulario_contacto .contacto label, .container_formulario .formulario_contacto input, .container_formulario .formulario_contacto textarea {
   width: 100%;
   margin-bottom: 7px;
+  font-weight: bold;
 }
 /*# sourceMappingURL=main.css.map */
