@@ -1,17 +1,28 @@
-main{
-
+.principal_informacion{
+   
     .imagen_glorieta{
         display: flex;
         justify-content:center;
+        align-items: center;
         padding: 3rem;
-    
+        overflow: hidden;
 
         img{
-            border-radius: 60px;
+         border-radius: 60px;
         }
-    }
+    }   
         
+    .descripcion_card{
+        background-color: aliceblue;
+        font-size: large;
+        font-style: italic;
+        font-weight: bold;
+        box-shadow:7px 13px 37px gray ;
+        overflow: hidden;
+        margin: 20px;
+        padding: auto;
 
+    }
 
 
 }

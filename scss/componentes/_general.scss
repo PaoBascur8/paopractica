@@ -12,7 +12,11 @@ body{
     flex-direction: column;
     height: 100vh;
 }
-
+.imagenes_carrusel{
+    width: 400px;
+    height:345px;
+    padding: 10px;
+}
 
 footer{
     margin-top: auto;
@@ -26,6 +30,5 @@ a{
 h1{
     text-align: center;
     color: darkolivegreen;
-    font-style: bold;
-   
+    font-style: bold;  
 }

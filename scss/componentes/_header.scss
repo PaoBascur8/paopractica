@@ -24,5 +24,22 @@ header {
                 }
             } 
         }
+  
+  
+  
     }
 }
+@media screen and (max-width: 500px){ 
+    .header_nav{
+        flex-direction: column;
+    }
+    .nav_lista{
+        width: 100%;
+        li{
+            margin: 1px;
+        }
+    }
+     
+        
+    
+}   

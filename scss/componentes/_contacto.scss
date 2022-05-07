@@ -1,12 +1,7 @@
-.container_formulario{
+.principal_formulario{
             display: flex;
           
-            p{ font: size 150px;
-                font-weight: bold;
-                color:olivedrab;
-                align-items: center;
-                justify-content: flex-start;
-            }
+            
             
          .formulario_contacto{
             background-color: aliceblue; 
@@ -19,6 +14,7 @@
                  width: 100%;
                  margin-bottom:7px;
                  font-weight: bold;
+
                 
             }
         }
