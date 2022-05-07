@@ -1,0 +1,19 @@
+main{
+
+    .titulo_ubicacion{
+        display: flex;
+        justify-content:center;
+        align-items: center;
+        flex-direction: column;
+        padding: 2rem;
+        color: darkolivegreen;
+        font-style: bold;
+
+    }   
+
+    .mapa_ubicacion{
+        display: flex;
+        justify-content:center;
+       padding: 3rem;
+     } 
+}

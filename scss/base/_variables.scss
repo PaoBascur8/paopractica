@@ -1,11 +1,11 @@
 @mixin flex ($display,$justify-content,$align-items){ 
     display:$display ;
     justify-content:$justify-content;
-    align-items:$align-items;}
+    align-items:$align-items;
+}
 
-    $variables-lista:( 
-        d-grid:grid,
-        f-direction:column,
-        g-gap: 10px,
-
-    ) ;
+$variables-lista:( 
+    d-grid:grid,
+    f-direction:column,
+    g-gap: 10px,
+)
