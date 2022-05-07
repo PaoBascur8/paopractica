@@ -19,6 +19,12 @@ body {
   height: 100vh;
 }
 
+.imagenes_carrusel {
+  width: 400px;
+  height: 345px;
+  padding: 10px;
+}
+
 footer {
   margin-top: auto;
 }
@@ -77,6 +83,21 @@ header .header_nav .nav_lista li {
 
 header .header_nav .nav_lista li:hover {
   background-color: rgba(148, 233, 148, 0.986);
+}
+
+@media screen and (max-width: 500px) {
+  .header_nav {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .nav_lista {
+    width: 100%;
+  }
+  .nav_lista li {
+    margin: 1px;
+  }
 }
 
 .container_galeria_grid {
@@ -271,6 +292,15 @@ footer .redes li:hover {
   background-color: rgba(148, 233, 148, 0.986);
 }
 
+@media screen and (max-width: 500px) {
+  footer .redes {
+    gap: 0rem;
+  }
+  footer .redes li {
+    margin: 5px;
+  }
+}
+
 main .titulo_ubicacion {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -300,7 +330,7 @@ main .mapa_ubicacion {
   padding: 3rem;
 }
 
-.container_informacion {
+.principal_informacion .imagen_glorieta {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -310,35 +340,33 @@ main .mapa_ubicacion {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-}
-
-.container_informacion .imagen_glorieta {
   padding: 3rem;
+  overflow: hidden;
 }
 
-.container_informacion .imagen_glorieta img {
+.principal_informacion .imagen_glorieta img {
   border-radius: 60px;
 }
 
-.container_formulario {
+.principal_informacion .descripcion_card {
+  background-color: aliceblue;
+  font-size: large;
+  font-style: italic;
+  font-weight: bold;
+  -webkit-box-shadow: 7px 13px 37px gray;
+          box-shadow: 7px 13px 37px gray;
+  overflow: hidden;
+  margin: 20px;
+  padding: auto;
+}
+
+.principal_formulario {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
-.container_formulario p {
-  font: size 150px;
-  font-weight: bold;
-  color: olivedrab;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
-}
-
-.container_formulario .formulario_contacto {
+.principal_formulario .formulario_contacto {
   background-color: aliceblue;
   width: 400px;
   -webkit-box-shadow: 7px 13px 37px gray;
@@ -347,7 +375,7 @@ main .mapa_ubicacion {
   padding: 10px;
 }
 
-.container_formulario .formulario_contacto .contacto label, .container_formulario .formulario_contacto input, .container_formulario .formulario_contacto textarea {
+.principal_formulario .formulario_contacto .contacto label, .principal_formulario .formulario_contacto input, .principal_formulario .formulario_contacto textarea {
   width: 100%;
   margin-bottom: 7px;
   font-weight: bold;
