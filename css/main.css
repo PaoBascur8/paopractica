@@ -85,7 +85,7 @@ header .header_nav .nav_lista li:hover {
   background-color: rgba(148, 233, 148, 0.986);
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 768px) {
   .header_nav {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -96,7 +96,22 @@ header .header_nav .nav_lista li:hover {
     width: 100%;
   }
   .nav_lista li {
-    margin: 1px;
+    margin: 0px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .header_nav {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .nav_lista {
+    width: 100%;
+  }
+  .nav_lista li {
+    margin: 0px;
   }
 }
 
@@ -292,7 +307,16 @@ footer .redes li:hover {
   background-color: rgba(148, 233, 148, 0.986);
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 768px) {
+  footer .redes {
+    gap: 0rem;
+  }
+  footer .redes li {
+    margin: 5px;
+  }
+}
+
+@media screen and (max-width: 480px) {
   footer .redes {
     gap: 0rem;
   }
@@ -364,6 +388,19 @@ main .mapa_ubicacion {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.principal_formulario p {
+  margin: 2rem;
+  font-size: large;
+  font-weight: bold;
+  color: darkolivegreen;
 }
 
 .principal_formulario .formulario_contacto {
@@ -379,5 +416,17 @@ main .mapa_ubicacion {
   width: 100%;
   margin-bottom: 7px;
   font-weight: bold;
+}
+
+@media screen and (max-width: 768px) {
+  .principal_formulario {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .principal_formulario {
+    width: 100%;
+  }
 }
 /*# sourceMappingURL=main.css.map */

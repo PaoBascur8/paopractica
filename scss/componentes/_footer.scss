@@ -18,18 +18,29 @@ footer{
     }
 
 }
-    @media screen and (max-width: 500px) {
-        footer{
-            .redes{
-             
-                
-                 gap: 0rem;;
-                 li{    
-                     margin: 5px;
-                     
-                    }
 
+@media screen and (max-width: 768px) {
+    footer{
+        .redes{
+         gap: 0rem;
+            li{    
+                margin: 5px;
+                     
             }
-        } 
+
+        }
+    } 
 }
 
+@media screen and (max-width: 480px) {
+    footer{
+        .redes{
+         gap: 0rem;
+            li{    
+                margin: 5px;
+                     
+            }
+
+        }
+    } 
+}

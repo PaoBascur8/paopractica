@@ -29,17 +29,27 @@ header {
   
     }
 }
-@media screen and (max-width: 500px){ 
+
+@media screen and (max-width: 768px){ 
     .header_nav{
         flex-direction: column;
     }
     .nav_lista{
         width: 100%;
         li{
-            margin: 1px;
+            margin: 0px;
         }
     }
      
-        
-    
+}   
+@media screen and (max-width: 480px){ 
+    .header_nav{
+        flex-direction: column;
+    }
+    .nav_lista{
+        width: 100%;
+        li{
+            margin: 0px;
+        }
+    } 
 }   
