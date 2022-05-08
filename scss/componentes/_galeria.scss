@@ -103,4 +103,15 @@
 h3{
     margin: 50px 10px 10px;
 }
-   
+@media screen and (max-width: 768px){
+    .img_habitaciones{  
+        display: flex;
+       justify-content:flex-start;
+     }
+
+
+}
+
+@media screen and (max-width: 480px){
+
+}
