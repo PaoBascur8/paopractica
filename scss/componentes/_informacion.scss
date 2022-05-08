@@ -27,3 +27,30 @@
 
 }
     
+@media screen and (max-width: 768px){
+    .imagen_glorieta {
+        position: relative;
+        padding: 0rem;
+
+        img{
+            border-radius: 60px;
+            width: 100%;
+            position: relative;
+           }
+    }
+}
+
+@media screen and (max-width: 480px) {
+
+    .imagen_glorieta{
+       position: relative;
+       padding: 0rem;
+        img{
+            border-radius: 60px;
+            width: 100%;
+            position: relative;
+           }
+    }
+
+} 
+
