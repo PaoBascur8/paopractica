@@ -1,13 +1,13 @@
-.container_galeria_grid {
-        display: map-get($map:$variables-lista , $key:d-grid );
-        grid-template-columns: 1fr;
-        grid-template-rows: 15vh;
-        grid-template-areas:
-        "titulo_area"
-        "habitaciones_area"
-        "espaciosComunes_area"
-        "abuelos_area"
-        "festejos_area";
+.galeria_grid {
+    display: map-get($map:$variables-lista , $key:d-grid );
+    grid-template-columns: 1fr;
+    grid-template-rows: 15vh;
+    grid-template-areas:
+    "titulo_area"
+    "habitaciones_area"
+    "espaciosComunes_area"
+    "abuelos_area"
+    "festejos_area";
 
         .titulo_galeria{
             grid-area: titulo_area;
@@ -32,7 +32,6 @@
             }
         }
     
-
         .espacios_comunes{
             grid-area: espaciosComunes_area;
             @include flex (flex,space-between,center);
@@ -89,8 +88,7 @@
     
     
 }
-    
-    
+      
 .imagenes_galeria{
     width: 500px;
     height: 335px;
@@ -101,7 +99,6 @@
         transition: 500ms;
     }
 }
-
 
 h3{
     margin: 50px 10px 10px;

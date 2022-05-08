@@ -115,7 +115,7 @@ header .header_nav .nav_lista li:hover {
   }
 }
 
-.container_galeria_grid {
+.galeria_grid {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 1fr;
@@ -125,7 +125,7 @@ header .header_nav .nav_lista li:hover {
       grid-template-areas: "titulo_area" "habitaciones_area" "espaciosComunes_area" "abuelos_area" "festejos_area";
 }
 
-.container_galeria_grid .titulo_galeria {
+.galeria_grid .titulo_galeria {
   -ms-grid-row: 1;
   -ms-grid-column: 1;
   grid-area: titulo_area;
@@ -141,7 +141,7 @@ header .header_nav .nav_lista li:hover {
   color: darkolivegreen;
 }
 
-.container_galeria_grid .habitaciones {
+.galeria_grid .habitaciones {
   -ms-grid-row: 2;
   -ms-grid-column: 1;
   grid-area: habitaciones_area;
@@ -158,7 +158,7 @@ header .header_nav .nav_lista li:hover {
   color: darkolivegreen;
 }
 
-.container_galeria_grid .habitaciones .img_habitaciones {
+.galeria_grid .habitaciones .img_habitaciones {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -167,11 +167,11 @@ header .header_nav .nav_lista li:hover {
           justify-content: space-between;
 }
 
-.container_galeria_grid .habitaciones .img_habitaciones .img_habitaciones1 {
+.galeria_grid .habitaciones .img_habitaciones .img_habitaciones1 {
   margin: 1em;
 }
 
-.container_galeria_grid .espacios_comunes {
+.galeria_grid .espacios_comunes {
   -ms-grid-row: 3;
   -ms-grid-column: 1;
   grid-area: espaciosComunes_area;
@@ -191,7 +191,7 @@ header .header_nav .nav_lista li:hover {
   color: darkolivegreen;
 }
 
-.container_galeria_grid .espacios_comunes .img_Ecomunes {
+.galeria_grid .espacios_comunes .img_Ecomunes {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 1fr 1fr;
@@ -199,7 +199,7 @@ header .header_nav .nav_lista li:hover {
   grid-gap: 10px;
 }
 
-.container_galeria_grid .espacios_comunes .img_Ecomunes .img_Ecomunes_1 {
+.galeria_grid .espacios_comunes .img_Ecomunes .img_Ecomunes_1 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -214,7 +214,7 @@ header .header_nav .nav_lista li:hover {
   margin: 1em;
 }
 
-.container_galeria_grid .pacientes {
+.galeria_grid .pacientes {
   -ms-grid-row: 4;
   -ms-grid-column: 1;
   grid-area: abuelos_area;
@@ -231,7 +231,7 @@ header .header_nav .nav_lista li:hover {
   color: darkolivegreen;
 }
 
-.container_galeria_grid .pacientes .img_Pacientes {
+.galeria_grid .pacientes .img_Pacientes {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 1fr 1fr;
@@ -239,7 +239,7 @@ header .header_nav .nav_lista li:hover {
   grid-gap: 10px;
 }
 
-.container_galeria_grid .festejos {
+.galeria_grid .festejos {
   -ms-grid-row: 5;
   -ms-grid-column: 1;
   grid-area: festejos_area;
@@ -256,7 +256,7 @@ header .header_nav .nav_lista li:hover {
   color: darkolivegreen;
 }
 
-.container_galeria_grid .festejos .img_festejos {
+.galeria_grid .festejos .img_festejos {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 1fr 1fr;
@@ -382,6 +382,30 @@ main .mapa_ubicacion {
   overflow: hidden;
   margin: 20px;
   padding: auto;
+}
+
+@media screen and (max-width: 768px) {
+  .imagen_glorieta {
+    position: relative;
+    padding: 0rem;
+  }
+  .imagen_glorieta img {
+    border-radius: 60px;
+    width: 100%;
+    position: relative;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .imagen_glorieta {
+    position: relative;
+    padding: 0rem;
+  }
+  .imagen_glorieta img {
+    border-radius: 60px;
+    width: 100%;
+    position: relative;
+  }
 }
 
 .principal_formulario {
