@@ -1,14 +1,22 @@
 .principal_formulario{
-            display: flex;
-          
+    display: flex;
+    justify-content:center;
+    align-items: center;
+
+      p{
+       margin: 2rem;
+       font-size: large;
+       font-weight: bold;
+       color: darkolivegreen;
+      }
             
             
-         .formulario_contacto{
-            background-color: aliceblue; 
-            width: 400px; 
-            box-shadow: 7px 13px 37px gray; 
-            overflow: hidden; 
-            padding: 10px;
+    .formulario_contacto{
+      background-color: aliceblue; 
+      width: 400px; 
+      box-shadow: 7px 13px 37px gray; 
+      overflow: hidden; 
+      padding: 10px;
             
             .contacto label,input,textarea {
                  width: 100%;

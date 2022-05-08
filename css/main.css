@@ -364,6 +364,19 @@ main .mapa_ubicacion {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.principal_formulario p {
+  margin: 3rem;
+  font-size: large;
+  font-weight: bold;
+  color: darkolivegreen;
 }
 
 .principal_formulario .formulario_contacto {
