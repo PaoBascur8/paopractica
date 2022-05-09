@@ -267,7 +267,7 @@ header .header_nav .nav_lista li:hover {
 }
 
 .imagenes_galeria {
-  width: 500px;
+  max-width: 500px;
   height: 335px;
 }
 
