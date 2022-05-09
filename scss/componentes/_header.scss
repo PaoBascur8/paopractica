@@ -1,7 +1,5 @@
 header {
-    .header_nav{ @include flex(flex,space-between,center);
-        padding: 1px;
-        margin: 10px; 
+    
 
         .img_header_tamanio {
             width: 250px;
@@ -27,7 +25,7 @@ header {
   
   
   
-    }
+    
 }
 
 @media screen and (max-width: 768px){ 

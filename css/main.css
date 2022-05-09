@@ -42,26 +42,12 @@ h1 {
   margin-bottom: 1.5rem;
 }
 
-header .header_nav {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  padding: 1px;
-  margin: 10px;
-}
-
-header .header_nav .img_header_tamanio {
+header .img_header_tamanio {
   width: 250px;
   height: auto;
 }
 
-header .header_nav .nav_lista {
+header .nav_lista {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -74,7 +60,7 @@ header .header_nav .nav_lista {
   list-style: none;
 }
 
-header .header_nav .nav_lista li {
+header .nav_lista li {
   margin: 19px;
   border-radius: 11pc;
   border: solid 1px;
@@ -83,7 +69,7 @@ header .header_nav .nav_lista li {
           box-shadow: 1px 3px 3px grey;
 }
 
-header .header_nav .nav_lista li:hover {
+header .nav_lista li:hover {
   background-color: rgba(148, 233, 148, 0.986);
 }
 
